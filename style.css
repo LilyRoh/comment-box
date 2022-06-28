@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(160, 236, 224);
+    text-align: center;
+    
+}
+.container{
+    
+    padding: 10px;
+
+}
+#title{
+    padding:40px;
+    font-size:50px;
+    
+
+}
+.form-group{
+    background-color:rgb(242, 252, 250);
+    padding: 0px;
+    font-size: 20px;
+    width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+    padding-bottom: 2em;
+    
+}
+

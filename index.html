@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        
+
+
+    </head>
+
+    <title>
+        Comment Box
+    </title>
+
+    <body>
+        <div class="container">
+            <h1 id="title">Re</h1>
+        </div>
+        <form action="#" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">
+                    Name
+
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="email-label" id="email-label">
+                    Email
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label for="number-label" id="number-label">Age<span class="clue">(Optional)</span>
+                <input type="number" name="age" id="number" min="18" max="80" class="form-control" placeholder="Age">
+            </label>
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select name="roles" id="dropdown" class="form-control" required>
+                    <option value="fulltimejob">Full time job</option>
+                    <option value="parttimejob">Part time job</option>
+                    <option value="student">Student</option>
+                    <option value="retired">Retired</option>
+                    <option value="other">other</option>
+
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What is your sexual orientation? <span class="clue"></span>
+                </p>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Asexual" name="sexuality">
+                    Asexual
+
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Bisexual" name="sexuality">
+                    Bisexual
+
+                </label>
+
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Gay" name="sexuality">
+                    Gay
+
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Heterosexual or straight" name="sexuality">
+                    Heterosexual or straight
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Lesbian" name="sexuality">
+                    Lesbian
+
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Pansexual" name="sexuality">
+                    Pansexual
+
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="Queer" name="sexuality">
+                    Queer
+
+                </label>
+                <label>
+                    <input type="checkbox" class="input-checkbox" value="None of the above" name="sexuality">
+                    None of the above
+                    <textarea name="sexuality" id="comment" cols="20" rows="1" placeholder="please specify"></textarea>
+
+                </label>
+                </div>
+                <div class="form-group">
+                    <h3>let us know how was your experience.
+                    </h3>
+                    <textarea onkeyup="counter(this,140)" name="contents" id="textbox" placeholder="Write here" rows="4" cols="50"></textarea>
+                <div>
+                    <span id="reCount">0/140</span>
+                </div>
+                </div>
+                
+                
+                <div class="form-group">
+                    <button onclick="showComment()"type="submit" id="submit" class="submit-button">Submit</button>
+                    <p id="demo"></p>
+                </div>
+                
+                
+
+            </div>
+        </form>
+        
+        <script src="script.js"></script>
+    </body>
+    </html>
